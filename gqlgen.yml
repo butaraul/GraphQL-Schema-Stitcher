@@ -1,0 +1,24 @@
+schema:
+  - internal/schema/*.graphqls
+
+exec:
+  filename: internal/generated/generated.go
+  package: generated
+
+model:
+  filename: internal/generated/models_gen.go
+  package: generated
+
+resolver:
+  layout: follow-schema
+  dir: internal/resolvers
+  package: resolvers
+  filename_template: "{name}.resolvers.go"
+
+autobind:
+  - "graphql-gateway/internal/models"
+
+models:
+  ID:
+    model:
+      - github.com/99designs/gqlgen/graphql.ID
