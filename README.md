@@ -1,5 +1,8 @@
 # GraphQL Gateway
 
+![GitHub Repo stars](https://img.shields.io/github/stars/butaraul/GraphQL-Schema-Stitcher)
+
+
 A single GraphQL gateway (schema stitching) that federates three downstream
 services — Users, Posts, Comments — into one unified graph, with dataloader
 batching, concurrent field resolution, graceful error handling, and a health
